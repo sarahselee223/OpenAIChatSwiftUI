@@ -11,6 +11,7 @@
 		26DB234B298A268B0002A509 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB234A298A268B0002A509 /* ContentView.swift */; };
 		26DB234D298A268D0002A509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DB234C298A268D0002A509 /* Assets.xcassets */; };
 		26DB2350298A268D0002A509 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DB234F298A268D0002A509 /* Preview Assets.xcassets */; };
+		26DB2358298A272D0002A509 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 26DB2357298A272D0002A509 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DB2358298A272D0002A509 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ChatAI;
+			packageProductDependencies = (
+				26DB2357298A272D0002A509 /* OpenAISwift */,
+			);
 			productName = ChatAI;
 			productReference = 26DB2345298A268B0002A509 /* ChatAI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 26DB233C298A268B0002A509;
+			packageReferences = (
+				26DB2356298A272D0002A509 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 26DB2346298A268B0002A509 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26DB2356298A272D0002A509 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26DB2357298A272D0002A509 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26DB2356298A272D0002A509 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26DB233D298A268B0002A509 /* Project object */;
 }
